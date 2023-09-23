@@ -1,0 +1,887 @@
+<div class="geSidebarContainer geFormatContainer"
+	style="right: 0px; z-index: 1; top: 103px; width: 240px; bottom: 0px;">
+	<div style="white-space: nowrap; color: rgb(112, 112, 112); text-align: left; cursor: default;">
+		<div class="geFormatSection item" [class.active]="tab === 1" (click)="tab=1">樣式</div>
+		<div class="geFormatSection item" [class.active]="tab === 2" (click)="tab=2">事件</div>
+		<div class="geFormatSection item" [class.active]="tab === 3" (click)="tab=3">數據</div>
+	</div>
+	<div style="white-space: nowrap; color: rgb(112, 112, 112); text-align: left; cursor: default;" *ngIf="tab === 1">
+		<div class="geFormatSection" style="padding: 12px 0px 6px 16px; position: relative;">
+			<div style="white-space: nowrap; padding-left: 24px; padding-right: 20px;">
+				<button class="geStyleButton" style="width: 36px; height: 24px; margin: 0px 6px 6px 0px; background-color: rgb(255, 255, 255); border: 1px solid rgb(42, 42, 42);">
+        </button>
+				<button class="geStyleButton" style="width: 36px; height: 24px; margin: 0px 6px 6px 0px; background-color: rgb(245, 245, 245); border: 1px solid rgb(102, 102, 102);">
+        </button>
+				<button class="geStyleButton" style="width: 36px; height: 24px; margin: 0px 6px 6px 0px; background-color: rgb(218, 232, 252); border: 1px solid rgb(108, 142, 191);">
+        </button>
+				<button class="geStyleButton" style="width: 36px; height: 24px; margin: 0px 6px 6px 0px; background-color: rgb(213, 232, 212); border: 1px solid rgb(130, 179, 102);">
+        </button>
+				<br>
+				<button class="geStyleButton" style="width: 36px; height: 24px; margin: 0px 6px 6px 0px; background-color: rgb(255, 230, 204); border: 1px solid rgb(215, 155, 0);">
+        </button>
+				<button class="geStyleButton" style="width: 36px; height: 24px; margin: 0px 6px 6px 0px; background-color: rgb(255, 242, 204); border: 1px solid rgb(214, 182, 86);">
+        </button>
+				<button class="geStyleButton" style="width: 36px; height: 24px; margin: 0px 6px 6px 0px; background-color: rgb(248, 206, 204); border: 1px solid rgb(184, 84, 80);">
+        </button>
+				<button class="geStyleButton" style="width: 36px; height: 24px; margin: 0px 6px 6px 0px; background-color: rgb(225, 213, 231); border: 1px solid rgb(150, 115, 166);">
+        </button>
+			</div>
+			<div
+				style="position: absolute; left: 10px; top: 8px; bottom: 28px; width: 20px; margin: 4px; opacity: 0.5; background-repeat: no-repeat; background-position: center center; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQBAMAAADQT4M0AAAAIVBMVEUAAAB2dnZ4eHh3d3d1dXVxcXF2dnZ2dnZ2dnZxcXF2dnYmb3w1AAAACnRSTlMAfCTkhhvb7cQSPH2JPgAAADRJREFUCNdjwACMAmBKaiGYs2oJmLPKAZ3DabU8AMRTXpUKopislqFyVzCAuUZgikkBZjoAcMYLnp53P/UAAAAASUVORK5CYII=&quot;);">
+			</div>
+			<div
+				style="position: absolute; left: 202px; top: 8px; bottom: 28px; width: 20px; margin: 4px; opacity: 0.5; background-repeat: no-repeat; background-position: center center; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQBAMAAADQT4M0AAAAIVBMVEUAAAB2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnYBuwCcAAAACnRSTlMAfCTkhhvb7cQSPH2JPgAAADZJREFUCNdjQAOMAmBKaiGY8loF5rKswsZlrVo8AUiFrTICcbIWK8A5DF1gDoMymMPApIAwHwCS0Qx/U7qCBQAAAABJRU5ErkJggg==&quot;);">
+			</div>
+			<div style="white-space: nowrap; position: relative; text-align: center;">
+				<div
+					style="display: inline-block; width: 6px; height: 6px; margin-left: 4px; margin-right: 3px; border-radius: 3px; cursor: pointer; background: rgb(132, 215, 255); border: 1px solid rgb(181, 182, 183);">
+				</div>
+				<div
+					style="display: inline-block; width: 6px; height: 6px; margin-left: 4px; margin-right: 3px; border-radius: 3px; cursor: pointer; background: transparent; border: 1px solid rgb(181, 182, 183);">
+				</div>
+				<div
+					style="display: inline-block; width: 6px; height: 6px; margin-left: 4px; margin-right: 3px; border-radius: 3px; cursor: pointer; background: transparent; border: 1px solid rgb(181, 182, 183);">
+				</div>
+				<div
+					style="display: inline-block; width: 6px; height: 6px; margin-left: 4px; margin-right: 3px; border-radius: 3px; cursor: pointer; background: transparent; border: 1px solid rgb(181, 182, 183);">
+				</div>
+				<div
+					style="display: inline-block; width: 6px; height: 6px; margin-left: 4px; margin-right: 3px; border-radius: 3px; cursor: pointer; background: transparent; border: 1px solid rgb(181, 182, 183);">
+				</div>
+				<div
+					style="display: inline-block; width: 6px; height: 6px; margin-left: 4px; margin-right: 3px; border-radius: 3px; cursor: pointer; background: transparent; border: 1px solid rgb(181, 182, 183);">
+				</div>
+			</div>
+		</div>
+		<div class="geFormatSection" style="padding: 6px 0px 6px 18px;">
+			<div
+				style="padding: 6px 0px 1px; white-space: nowrap; overflow: hidden; width: 200px; height: 18px; font-weight: bold;">
+				<input type="checkbox" checked="" style="margin: 0px 6px 0px 0px;">
+				<span>填滿
+        </span>
+				<button class="geColorBtn" style="position: absolute; margin-top: -4px; right: 20px; height: 22px;">
+          <div style="width:36px;height:12px;margin:3px;border:1px solid black;background-color:#ffffff;">
+          </div>
+        </button>
+				<select style="position: absolute; margin-top: -2px; right: 72px; width: 70px; display: none;">
+          <option value="auto">Auto
+          </option>
+          <option value="hachure">Hachure
+          </option>
+          <option value="solid">Solid
+          </option>
+          <option value="zigzag">ZigZag
+          </option>
+          <option value="cross-hatch">Cross Hatch
+          </option>
+          <option value="dots">Dots
+          </option>
+          <option value="dashed">Dashed
+          </option>
+          <option value="zigzag-line">ZigZag Line
+          </option>
+        </select>
+			</div>
+			<div style="padding: 6px 0px 1px; white-space: nowrap; overflow: hidden; width: 200px; height: 18px;">
+				<input type="checkbox" style="margin: 0px 6px 0px 0px;">
+				<span>漸層
+        </span>
+				<button class="geColorBtn" style="position: absolute; margin-top: -4px; right: 20px; height: 22px; display: none;">
+          <div style="width:36px;height:12px;margin:3px;border:1px solid black;background-color:#ffffff;">
+          </div>
+        </button>
+				<select style="position: absolute; margin-top: -2px; right: 72px; width: 70px; display: none;">
+          <option value="north">向上漸層
+          </option>
+          <option value="east">向右漸層
+          </option>
+          <option value="south">向下漸層
+          </option>
+          <option value="west">向左漸層
+          </option>
+        </select>
+			</div>
+		</div>
+		<div class="geFormatSection" style="padding: 4px 0px 4px 18px; white-space: normal;">
+			<div style="font-weight: bold;">
+				<div style="padding: 6px 0px 1px; white-space: nowrap; overflow: hidden; width: 200px; height: 18px;">
+					<input type="checkbox" checked="" style="margin: 0px 6px 0px 0px;">
+					<span>邊線
+          </span>
+					<button class="geColorBtn" style="position: absolute; margin-top: -4px; right: 20px; height: 22px;">
+            <div style="width:36px;height:12px;margin:3px;border:1px solid black;background-color:#000000;">
+            </div>
+          </button>
+					<select style="position: absolute; margin-top: -2px; right: 72px; width: 80px; visibility: hidden;">
+            <option value="sharp">銳角
+            </option>
+            <option value="rounded">圓角
+            </option>
+            <option value="curved">曲線
+            </option>
+          </select>
+				</div>
+			</div>
+			<div style="font-weight: normal; white-space: nowrap; position: relative; padding-left: 16px; margin-bottom: 2px; margin-top: 2px; display: none;"
+				class="geToolbarContainer">
+				<a class="geButton geColorBtn" title="連接線"
+					style="opacity: 1; border: 1px solid rgb(160, 160, 160); background-color: white; background-image: none; width: auto; border-radius: 3px; height: 15px;">
+					<div class="geSprite geSprite-connection"
+						style="padding-right: 6px; margin-left: 4px; margin-top: -1px; display: inline-block; opacity: 0.6;">
+					</div>
+					<div
+						style="display: inline-block; padding: 6px 4px 6px 6px; height: 8px; border-left: 1px solid rgb(160, 160, 160); opacity: 0.7;">
+						<img border="0" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHBJREFUeNpidHB2ZyAGsACxDRBPIKCuA6TwCBB/h2rABu4A8SYmKCcXiP/iUFgAxL9gCi8A8SwsirZCMQMTkmANEH9E4v+CmsaArvAdyNFI/FlQ92EoBIE+qCRIUz168DBgsU4OqhinQpgHMABAgAEALY4XLIsJ20oAAAAASUVORK5CYII=" style="margin-bottom:4px;">
+          </div>
+				</a>
+				<a class="geButton geColorBtn" title="圖案樣式"
+					style="opacity: 1; border: 1px solid rgb(160, 160, 160); background-color: white; background-image: none; width: auto; border-radius: 3px; height: 15px;">
+					<div class="geIcon"
+						style="padding-right: 6px; margin-left: 4px; margin-top: -1px; display: inline-block; opacity: 0.6; width: 22px;">
+						<div style="width: 23px; height: 1px; border-bottom: 1px solid black; margin-bottom: 9px;">
+						</div>
+					</div>
+					<div
+						style="display: inline-block; padding: 5px 4px 6px 6px; height: 9px; border-left: 1px solid rgb(160, 160, 160); opacity: 0.7;">
+						<img border="0" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHBJREFUeNpidHB2ZyAGsACxDRBPIKCuA6TwCBB/h2rABu4A8SYmKCcXiP/iUFgAxL9gCi8A8SwsirZCMQMTkmANEH9E4v+CmsaArvAdyNFI/FlQ92EoBIE+qCRIUz168DBgsU4OqhinQpgHMABAgAEALY4XLIsJ20oAAAAASUVORK5CYII=" style="margin-bottom:4px;">
+          </div>
+				</a>
+				<input title="邊線寬度" style="text-align: right; margin-top: 2px; width: 41px; position: absolute; left: 141px; height: 15px;">
+				<div
+					style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: 2px; left: 190px;">
+					<div class="geBtnUp"
+						style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 9px; width: 10px;">
+					</div>
+					<div class="geBtnDown" style="border: none; position: relative; height: 9px; width: 10px;">
+					</div>
+				</div>
+			</div>
+			<div style="font-weight: normal; white-space: nowrap; position: relative; padding-left: 16px; margin-bottom: 2px; margin-top: 2px;"
+				class="geToolbarContainer">
+				<a class="geButton geColorBtn" title="圖案樣式"
+					style="opacity: 1; border: 1px solid rgb(160, 160, 160); background-color: white; background-image: none; width: auto; border-radius: 3px; height: 15px;">
+					<div class="geIcon"
+						style="padding-right: 6px; margin-left: 4px; margin-top: -1px; display: inline-block; opacity: 0.6; width: auto;">
+						<div style="width: 85px; height: 1px; border-bottom: 1px solid black; margin-bottom: 9px;">
+						</div>
+					</div>
+					<div
+						style="display: inline-block; padding: 5px 4px 6px 6px; height: 9px; border-left: 1px solid rgb(160, 160, 160); opacity: 0.7;">
+						<img border="0" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHBJREFUeNpidHB2ZyAGsACxDRBPIKCuA6TwCBB/h2rABu4A8SYmKCcXiP/iUFgAxL9gCi8A8SwsirZCMQMTkmANEH9E4v+CmsaArvAdyNFI/FlQ92EoBIE+qCRIUz168DBgsU4OqhinQpgHMABAgAEALY4XLIsJ20oAAAAASUVORK5CYII=" style="margin-bottom:4px;">
+          </div>
+				</a>
+				<input title="邊線寬度" style="text-align: right; margin-top: 2px; width: 41px; position: absolute; height: 15px; left: 141px;">
+				<div
+					style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: 2px; left: 190px;">
+					<div class="geBtnUp"
+						style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 9px; width: 10px;">
+					</div>
+					<div class="geBtnDown" style="border: none; position: relative; height: 9px; width: 10px;">
+					</div>
+				</div>
+			</div>
+			<div
+				style="font-weight: normal; position: relative; padding-left: 16px; margin-bottom: 2px; margin-top: 6px; border-width: 0px; padding-bottom: 18px;">
+				<div
+					style="position: absolute; margin-left: 3px; margin-bottom: 12px; margin-top: 1px; font-weight: normal; width: 120px;">
+					周長
+				</div>
+				<input style="position: absolute; text-align: right; margin-top: -2px; right: 32px; width: 41px;">
+				<div
+					style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -2px; right: 20px;">
+					<div class="geBtnUp"
+						style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+					</div>
+					<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="geFormatSection" style="padding: 12px 0px 12px 18px; display: none;">
+		</div>
+		<div class="geFormatSection" style="padding: 8px 0px 8px 18px; font-weight: bold;">不透明度
+			<input style="position: absolute; text-align: right; margin-top: -2px; right: 32px; width: 41px;">
+			<div
+				style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -17px; right: 20px;">
+				<div class="geBtnUp"
+					style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+				</div>
+				<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+				</div>
+			</div>
+		</div>
+		<div class="geFormatSection" style="padding: 0px 0px 2px 18px;">
+			<table style="width: 100%; font-weight: bold; padding-right: 20px;">
+				<tbody>
+					<tr style="padding: 0px;">
+						<td valign="top" style="padding: 0px; width: 50%;">
+							<div
+								style="padding: 6px 0px 1px; white-space: nowrap; overflow: hidden; width: 100%; height: 18px;">
+								<input type="checkbox" style="margin: 0px 6px 0px 0px;">
+								<span>圓角
+                </span>
+							</div>
+							<div
+								style="padding: 6px 0px 1px; white-space: nowrap; overflow: hidden; width: 100%; height: 18px;">
+								<input type="checkbox" style="margin: 0px 6px 0px 0px;">
+								<span>玻璃
+                </span>
+							</div>
+						</td>
+						<td valign="top" style="padding: 0px 0px 0px 8px; width: 50%;">
+							<div
+								style="padding: 6px 0px 1px; white-space: nowrap; overflow: hidden; width: 100%; height: 18px;">
+								<input type="checkbox" style="margin: 0px 6px 0px 0px;">
+								<span>陰影
+                </span>
+							</div>
+							<div
+								style="padding: 6px 0px 1px; white-space: nowrap; overflow: hidden; width: 100%; height: 18px;">
+								<input type="checkbox" style="margin: 0px 6px 0px 0px;">
+								<span>Sketch
+                </span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="geFormatSection" style="padding: 10px 0px 10px 18px;">
+			<button title="編輯樣式 (Ctrl+E)" style="width: 100px; margin-bottom: 2px;">編輯樣式
+      </button>
+			<button title="編輯圖片" style="margin-bottom: 2px; width: 100px; margin-left: 2px;">編輯圖片
+      </button>
+			<br>
+			<button title="拷貝樣式 (Ctrl+Shift+C)" style="margin-bottom: 2px; width: 100px; margin-right: 2px;">拷貝樣式
+      </button>
+			<button title="貼上樣式 (Ctrl+Shift+V)" style="margin-bottom: 2px; width: 100px;">貼上樣式
+      </button>
+			<br>
+			<button title="設為預設樣式 (Ctrl+Shift+D)" style="width: 202px;">設為預設樣式
+      </button>
+		</div>
+		<div class="geFormatSection" style="padding: 0px; position: relative;">
+			<table class="geProperties" style="white-space: nowrap; width: 100%;">
+				<tr class="gePropHeader" style="cursor: pointer;">
+					<th class="gePropHeaderCell">
+						Property
+					</th>
+					<th class="gePropHeaderCell">Value
+					</th>
+				</tr>
+				<tbody>
+					<tr class="gePropRow gePropNonHeaderRow" data-pname="imageAspect" data-pvalue="true" style="">
+						<td class="gePropRowCell">Fixed Image Aspect</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowAlt gePropNonHeaderRow" data-pname="imageAlign" data-pvalue="left" style="">
+						<td class="gePropRowCell">Image Align</td>
+						<td class="gePropRowCell">Left</td>
+					</tr>
+					<tr class="gePropRow gePropNonHeaderRow" data-pname="imageVerticalAlign" data-pvalue="middle"
+						style="">
+						<td class="gePropRowCell">Image Vertical Align</td>
+						<td class="gePropRowCell">Middle</td>
+					</tr>
+					<tr class="gePropRowAlt gePropNonHeaderRow" data-pname="imageWidth" data-pvalue="24" style="">
+						<td class="gePropRowCell">Image Width</td>
+						<td class="gePropRowCell">24</td>
+					</tr>
+					<tr class="gePropRow gePropNonHeaderRow" data-pname="imageHeight" data-pvalue="24" style="">
+						<td class="gePropRowCell">Image Height</td>
+						<td class="gePropRowCell">24</td>
+					</tr>
+					<tr class="gePropRowAlt gePropNonHeaderRow" data-pname="arcSize" data-pvalue="12" style="">
+						<td class="gePropRowCell">Arc Size</td>
+						<td class="gePropRowCell">12</td>
+					</tr>
+					<tr class="gePropRow gePropNonHeaderRow" data-pname="absoluteArcSize" data-pvalue="false" style="">
+						<td class="gePropRowCell">Abs. Arc Size</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="fillOpacity" data-pvalue="100" style="">
+						<td class="gePropRowCell">Fill Opacity</td>
+						<td class="gePropRowCell">100</td>
+					</tr>
+					<tr class="gePropRowDark gePropNonHeaderRow" data-pname="strokeOpacity" data-pvalue="100" style="">
+						<td class="gePropRowCell">Stroke Opacity</td>
+						<td class="gePropRowCell">100</td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="overflow" data-pvalue="visible"
+						style="">
+						<td class="gePropRowCell">Text Overflow</td>
+						<td class="gePropRowCell">Visible</td>
+					</tr>
+					<tr class="gePropRowDark gePropNonHeaderRow" data-pname="noLabel" data-pvalue="false" style="">
+						<td class="gePropRowCell">Hide Label</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="labelPadding" data-pvalue="0" style="">
+						<td class="gePropRowCell">Label Padding</td>
+						<td class="gePropRowCell">0</td>
+					</tr>
+					<tr class="gePropRowDark gePropNonHeaderRow" data-pname="direction" data-pvalue="east" style="">
+						<td class="gePropRowCell">Direction</td>
+						<td class="gePropRowCell">East</td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="portConstraint" data-pvalue="none"
+						style="">
+						<td class="gePropRowCell">Constraint</td>
+						<td class="gePropRowCell">None</td>
+					</tr>
+					<tr class="gePropRowDark gePropNonHeaderRow" data-pname="portConstraintRotation" data-pvalue="false"
+						style="">
+						<td class="gePropRowCell">Rotate Constraint</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="connectable" data-pvalue="true"
+						style="">
+						<td class="gePropRowCell">Connectable</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDark gePropNonHeaderRow" data-pname="allowArrows" data-pvalue="true" style="">
+						<td class="gePropRowCell">Allow Arrows</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="snapToPoint" data-pvalue="false"
+						style="">
+						<td class="gePropRowCell">Snap to Point</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDark gePropNonHeaderRow" data-pname="perimeter" data-pvalue="rectanglePerimeter"
+						style="">
+						<td class="gePropRowCell">Perimeter</td>
+						<td class="gePropRowCell">Rectangle</td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="fixDash" data-pvalue="false" style="">
+						<td class="gePropRowCell">Fixed Dash</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDark gePropNonHeaderRow" data-pname="autosize" data-pvalue="false" style="">
+						<td class="gePropRowCell">Autosize</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="container" data-pvalue="false" style="">
+						<td class="gePropRowCell">Container</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDark gePropNonHeaderRow" data-pname="dropTarget" data-pvalue="false" style="">
+						<td class="gePropRowCell">Drop Target</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="collapsible" data-pvalue="false"
+						style="">
+						<td class="gePropRowCell">Collapsible</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDark gePropNonHeaderRow" data-pname="recursiveResize" data-pvalue="true"
+						style="">
+						<td class="gePropRowCell">Resize Children</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="expand" data-pvalue="true" style="">
+						<td class="gePropRowCell">Expand</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDark gePropNonHeaderRow" data-pname="editable" data-pvalue="true" style="">
+						<td class="gePropRowCell">Editable</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="metaEdit" data-pvalue="false" style="">
+						<td class="gePropRowCell">Edit Dialog</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDark gePropNonHeaderRow" data-pname="backgroundOutline" data-pvalue="false"
+						style="">
+						<td class="gePropRowCell">Background Outline</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="movable" data-pvalue="true" style="">
+						<td class="gePropRowCell">Movable</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDark gePropNonHeaderRow" data-pname="movableLabel" data-pvalue="false" style="">
+						<td class="gePropRowCell">Movable Label</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="resizable" data-pvalue="true" style="">
+						<td class="gePropRowCell">Resizable</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDark gePropNonHeaderRow" data-pname="resizeWidth" data-pvalue="false" style="">
+						<td class="gePropRowCell">Resize Width</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="resizeHeight" data-pvalue="false"
+						style="">
+						<td class="gePropRowCell">Resize Height</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDark gePropNonHeaderRow" data-pname="rotatable" data-pvalue="true" style="">
+						<td class="gePropRowCell">Rotatable</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="cloneable" data-pvalue="true" style="">
+						<td class="gePropRowCell">Cloneable</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDark gePropNonHeaderRow" data-pname="deletable" data-pvalue="true" style="">
+						<td class="gePropRowCell">Deletable</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="treeFolding" data-pvalue="false"
+						style="">
+						<td class="gePropRowCell">Tree Folding</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDark gePropNonHeaderRow" data-pname="treeMoving" data-pvalue="false" style="">
+						<td class="gePropRowCell">Tree Moving</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+					<tr class="gePropRowDarkAlt gePropNonHeaderRow" data-pname="comic" data-pvalue="false" style="">
+						<td class="gePropRowCell">Comic</td>
+						<td class="gePropRowCell">
+							<input type="checkbox"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+	<div style="white-space: nowrap; color: rgb(112, 112, 112); text-align: left; cursor: default; border-bottom: none;"
+		*ngIf="tab === 2">
+		<div
+			style="padding: 10px 0px 6px 18px; white-space: nowrap; overflow: hidden; width: 200px; font-weight: bold;">
+			字體
+		</div>
+		<div class="geToolbarContainer"
+			style="padding: 2px 0px 2px 18px; position: relative; margin-left: -2px; border-width: 0px;">
+			<a class="geLabel geColorBtn" title="字型"
+				style="color: rgb(112, 112, 112); white-space: nowrap; overflow: hidden; margin: 0px; opacity: 1; border: 1px solid rgb(160, 160, 160); background-color: white; background-image: none; width: 192px; border-radius: 3px; height: 15px;">Helvetica
+				<div
+					style="display: inline-block; padding: 6px 4px 6px 6px; margin-top: -2px; height: 10px; border-left: 1px solid rgb(160, 160, 160); opacity: 0.7; float: right;">
+					<img border="0" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHBJREFUeNpidHB2ZyAGsACxDRBPIKCuA6TwCBB/h2rABu4A8SYmKCcXiP/iUFgAxL9gCi8A8SwsirZCMQMTkmANEH9E4v+CmsaArvAdyNFI/FlQ92EoBIE+qCRIUz168DBgsU4OqhinQpgHMABAgAEALY4XLIsJ20oAAAAASUVORK5CYII=" style="margin-bottom:4px;">
+        </div></a>
+		</div>
+		<div class="geToolbarContainer"
+			style="padding: 2px 0px 2px 18px; position: relative; margin-left: -3px; border-width: 0px;">
+			<a class="geButton geColorBtn" title="粗體 (Ctrl+B)"
+				style="border-radius: 3px; opacity: 1; border: 1px solid rgb(160, 160, 160); padding: 3px 1px 4px 4px; margin: 1px; width: 24px; height: 20px;">
+				<div class="geSprite geSprite-bold">
+				</div>
+			</a>
+			<a class="geButton geColorBtn" title="斜體 (Ctrl+I)"
+				style="border-radius: 3px; opacity: 1; border: 1px solid rgb(160, 160, 160); padding: 3px 1px 4px 4px; margin: 1px; width: 24px; height: 20px;">
+				<div class="geSprite geSprite-italic">
+				</div>
+			</a>
+			<a class="geButton geColorBtn" title="底線 (Ctrl+U)"
+				style="border-radius: 3px; opacity: 1; border: 1px solid rgb(160, 160, 160); padding: 3px 1px 4px 4px; margin: 1px 9px 1px 1px; width: 24px; height: 20px;">
+				<div class="geSprite geSprite-underline">
+				</div>
+			</a>
+			<a class="geButton geColorBtn" title="垂直"
+				style="border-radius: 3px; opacity: 1; border: 1px solid rgb(160, 160, 160); padding: 3px 1px 4px 4px; margin: 1px; width: 24px; height: 20px;">
+				<div class="geSprite geSprite-vertical">
+				</div>
+			</a>
+			<input style="text-align: right; margin-top: 4px; position: absolute; right: 32px; width: 40px; height: 17px;">
+			<div
+				style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: 4px; right: 20px;">
+				<div class="geBtnUp"
+					style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 10px; width: 10px;">
+				</div>
+				<div class="geBtnDown" style="border: none; position: relative; height: 10px; width: 10px;">
+				</div>
+			</div>
+		</div>
+		<div class="geToolbarContainer"
+			style="padding: 2px 0px 0px 18px; position: relative; margin-left: -3px; border-width: 0px;">
+			<a class="geButton geColorBtn" title="左"
+				style="border-radius: 3px; opacity: 1; border: 1px solid rgb(160, 160, 160); padding: 3px 1px 4px 4px; margin: 1px; width: 24px; height: 20px;">
+				<div class="geSprite geSprite-left">
+				</div>
+			</a>
+			<a class="geButton geColorBtn" title="置中"
+				style="border-radius: 3px; opacity: 1; border: 1px solid rgb(160, 160, 160); padding: 3px 1px 4px 4px; margin: 1px; width: 24px; height: 20px; background-image: linear-gradient(rgb(197, 236, 255) 0px, rgb(135, 212, 251) 100%);">
+				<div class="geSprite geSprite-center">
+				</div>
+			</a>
+			<a class="geButton geColorBtn" title="右"
+				style="border-radius: 3px; opacity: 1; border: 1px solid rgb(160, 160, 160); padding: 3px 1px 4px 4px; margin: 1px 9px 1px 1px; width: 24px; height: 20px;">
+				<div class="geSprite geSprite-right">
+				</div>
+			</a>
+			<a class="geButton geColorBtn" title="上"
+				style="border-radius: 3px; opacity: 1; border: 1px solid rgb(160, 160, 160); padding: 3px 1px 4px 4px; margin: 1px; width: 24px; height: 20px;">
+				<div class="geSprite geSprite-top">
+				</div>
+			</a>
+			<a class="geButton geColorBtn" title="垂直置中"
+				style="border-radius: 3px; opacity: 1; border: 1px solid rgb(160, 160, 160); padding: 3px 1px 4px 4px; margin: 1px; width: 24px; height: 20px; background-image: linear-gradient(rgb(197, 236, 255) 0px, rgb(135, 212, 251) 100%);">
+				<div class="geSprite geSprite-middle">
+				</div>
+			</a>
+			<a class="geButton geColorBtn" title="下"
+				style="border-radius: 3px; opacity: 1; border: 1px solid rgb(160, 160, 160); padding: 3px 1px 4px 4px; margin: 1px; width: 24px; height: 20px;">
+				<div class="geSprite geSprite-bottom">
+				</div>
+			</a>
+		</div>
+		<div class="geToolbarContainer"
+			style="padding: 8px 0px 4px 18px; position: relative; margin-left: 0px; border-width: 0px; font-weight: normal;">
+			位置
+			<select style="position: absolute; right: 20px; width: 97px; margin-top: -2px;">
+        <option value="topLeft">左上
+        </option>
+        <option value="top">上
+        </option>
+        <option value="topRight">右上
+        </option>
+        <option value="left">左
+        </option>
+        <option value="center">置中
+        </option>
+        <option value="right">右
+        </option>
+        <option value="bottomLeft">左下
+        </option>
+        <option value="bottom">下
+        </option>
+        <option value="bottomRight">右下
+        </option>
+      </select>
+		</div>
+		<div class="geToolbarContainer"
+			style="padding: 4px 0px 4px 18px; position: relative; margin-left: 0px; border-width: 0px; font-weight: normal;">
+			書寫方向
+			<select style="position: absolute; right: 20px; width: 97px; margin-top: -2px;">
+        <option value="automatic">自動
+        </option>
+        <option value="leftToRight">向右對齊
+        </option>
+        <option value="rightToLeft">由右至左
+        </option>
+      </select>
+		</div>
+		<div class="geFormatSection"
+			style="padding: 6px 0px 6px 18px; margin-top: 8px; border-top: 1px solid rgb(192, 192, 192);">
+			<div
+				style="padding: 6px 0px 1px; white-space: nowrap; overflow: hidden; width: 200px; height: 18px; font-weight: bold;">
+				<input type="checkbox" checked="" style="margin: 0px 6px 0px 0px;">
+				<span>文字顏色
+        </span>
+				<button class="geColorBtn" style="position: absolute; margin-top: -4px; right: 20px; height: 22px;">
+          <div style="width:36px;height:12px;margin:3px;border:1px solid black;background-color:#000000;">
+          </div>
+        </button>
+			</div>
+			<div
+				style="padding: 6px 0px 1px; white-space: nowrap; overflow: hidden; width: 200px; height: 18px; font-weight: bold;">
+				<input type="checkbox" style="margin: 0px 6px 0px 0px;">
+				<span>背景顏色
+        </span>
+				<button class="geColorBtn" style="position: absolute; margin-top: -4px; right: 20px; height: 22px; display: none;">
+          <div style="width:36px;height:12px;margin:3px;border:1px solid black;background-color:#ffffff;">
+          </div>
+        </button>
+			</div>
+			<div
+				style="padding: 6px 0px 1px; white-space: nowrap; overflow: hidden; width: 200px; height: 18px; font-weight: bold;">
+				<input type="checkbox" style="margin: 0px 6px 0px 0px;">
+				<span>邊框顏色
+        </span>
+				<button class="geColorBtn" style="position: absolute; margin-top: -4px; right: 20px; height: 22px; display: none;">
+          <div style="width:36px;height:12px;margin:3px;border:1px solid black;background-color:#000000;">
+          </div>
+        </button>
+			</div>
+		</div>
+		<div class="geFormatSection" style="padding: 2px 0px 4px 18px;">
+			<div
+				style="padding: 6px 0px 1px; white-space: nowrap; overflow: hidden; width: 200px; height: 18px; font-weight: bold;">
+				<input type="checkbox" checked="" style="margin: 0px 6px 0px 0px;">
+				<span>自動換行
+        </span>
+			</div>
+			<div
+				style="padding: 6px 0px 1px; white-space: nowrap; overflow: hidden; width: 200px; height: 18px; font-weight: bold;">
+				<input type="checkbox" checked="" style="margin: 0px 6px 0px 0px;">
+				<span>格式化文字
+        </span>
+			</div>
+		</div>
+		<div class="geFormatSection" style="padding: 10px 0px 10px 18px; font-weight: bold;">不透明度
+			<input style="position: absolute; text-align: right; margin-top: -2px; right: 32px; width: 44px;">
+			<div
+				style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -17px; right: 20px;">
+				<div class="geBtnUp"
+					style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+				</div>
+				<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+				</div>
+			</div>
+		</div>
+		<div class="geFormatSection" style="padding: 10px 0px 28px 18px; font-weight: normal;">
+			<div style="position: absolute; width: 70px; margin-top: 0px; font-weight: bold;">間距
+			</div>
+			<input style="position: absolute; text-align: right; margin-top: -2px; right: 103px; width: 44px;">
+			<div
+				style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -2px; right: 91px;">
+				<div class="geBtnUp"
+					style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+				</div>
+				<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+				</div>
+			</div>
+			<input style="position: absolute; text-align: right; margin-top: -2px; right: 32px; width: 44px;">
+			<div
+				style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -2px; right: 20px;">
+				<div class="geBtnUp"
+					style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+				</div>
+				<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+				</div>
+			</div>
+			<br>
+			<div style="position: absolute; right: 91px; width: 61px; margin-top: 6px; text-align: center;">上
+			</div>
+			<div style="position: absolute; right: 20px; width: 61px; margin-top: 6px; text-align: center;">全域
+			</div>
+			<br>
+			<br>
+			<input style="position: absolute; text-align: right; margin-top: -2px; right: 174px; width: 44px;">
+			<div
+				style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -2px; right: 162px;">
+				<div class="geBtnUp"
+					style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+				</div>
+				<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+				</div>
+			</div>
+			<input style="position: absolute; text-align: right; margin-top: -2px; right: 103px; width: 44px;">
+			<div
+				style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -2px; right: 91px;">
+				<div class="geBtnUp"
+					style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+				</div>
+				<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+				</div>
+			</div>
+			<input style="position: absolute; text-align: right; margin-top: -2px; right: 32px; width: 44px;">
+			<div
+				style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -2px; right: 20px;">
+				<div class="geBtnUp"
+					style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+				</div>
+				<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+				</div>
+			</div>
+			<br>
+			<div style="position: absolute; right: 162px; width: 61px; margin-top: 6px; text-align: center;">左
+			</div>
+			<div style="position: absolute; right: 91px; width: 61px; margin-top: 6px; text-align: center;">下
+			</div>
+			<div style="position: absolute; right: 20px; width: 61px; margin-top: 6px; text-align: center;">右
+			</div>
+		</div>
+	</div>
+
+
+	<div style="white-space: nowrap; color: rgb(112, 112, 112); text-align: left; cursor: default;" *ngIf="tab === 3">
+		<div class="geFormatSection" style="padding: 12px 0px 12px 18px;">
+			<button title="移至最前 (Ctrl+Shift+F)" style="width: 100px; margin-right: 2px;">移至最前
+      </button>
+			<button title="移至最後 (Ctrl+Shift+B)" style="width: 100px;">移至最後
+      </button>
+		</div>
+		<div class="geFormatSection" style="padding: 12px 0px 8px 18px;">
+			<div style="position: absolute; width: 50px; margin-top: 0px; font-weight: bold;">大小
+			</div>
+			<input style="position: absolute; text-align: right; margin-top: -2px; right: 96px; width: 44px;">
+			<div
+				style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -2px; right: 84px;">
+				<div class="geBtnUp"
+					style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+				</div>
+				<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+				</div>
+			</div>
+			<input style="position: absolute; text-align: right; margin-top: -2px; right: 32px; width: 44px;">
+			<div
+				style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -2px; right: 20px;">
+				<div class="geBtnUp"
+					style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+				</div>
+				<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+				</div>
+			</div>
+			<div class="geSprite geSprite-fit" title="自動調整 (Ctrl+Shift+Y)"
+				style="position: relative; cursor: pointer; margin-top: -3px; border: 0px; left: 42px; opacity: 0.5;">
+			</div>
+			<div style="position: absolute; right: 84px; width: 61px; margin-top: 6px; text-align: center;">寬
+			</div>
+			<div style="position: absolute; right: 20px; width: 61px; margin-top: 6px; text-align: center;">高
+			</div>
+			<br>
+			<div style="padding-top: 8px; padding-right: 20px; white-space: nowrap; text-align: right;">
+				<div style="padding: 6px 0px 1px; white-space: nowrap; overflow: hidden; width: 100%; height: 18px;">
+					<input type="checkbox" style="margin: 0px 6px 0px 0px;">
+					<span>限制寬高比
+          </span>
+				</div>
+			</div>
+		</div>
+		<div class="geFormatSection" style="padding: 12px 0px 30px 18px;">
+			<div style="position: absolute; width: 70px; margin-top: 0px; font-weight: bold;">位置
+			</div>
+			<input style="position: absolute; text-align: right; margin-top: -2px; right: 96px; width: 44px;">
+			<div
+				style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -2px; right: 84px;">
+				<div class="geBtnUp"
+					style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+				</div>
+				<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+				</div>
+			</div>
+			<input style="position: absolute; text-align: right; margin-top: -2px; right: 32px; width: 44px;">
+			<div
+				style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -2px; right: 20px;">
+				<div class="geBtnUp"
+					style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+				</div>
+				<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+				</div>
+			</div>
+			<br>
+			<div style="position: absolute; right: 84px; width: 61px; margin-top: 6px; text-align: center;">左
+			</div>
+			<div style="position: absolute; right: 20px; width: 61px; margin-top: 6px; text-align: center;">上
+			</div>
+		</div>
+		<div class="geFormatSection" style="padding: 12px 0px 12px 18px; display: none;">
+			<div style="position: absolute; width: 70px; margin-top: 0px; font-weight: bold;">寬
+			</div>
+			<input style="position: absolute; text-align: right; margin-top: -2px; right: 32px; width: 44px;">
+			<div
+				style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -2px; right: 20px;">
+				<div class="geBtnUp"
+					style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+				</div>
+				<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+				</div>
+			</div>
+			<br>
+    </div>
+			<div class="geFormatSection" style="padding: 12px 0px 30px 18px; display: none;">
+				<div style="position: absolute; width: 70px; margin-top: 0px; font-weight: bold;">Start
+				</div>
+				<input style="position: absolute; text-align: right; margin-top: -2px; right: 96px; width: 44px;">
+				<div
+					style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -2px; right: 84px;">
+					<div class="geBtnUp"
+						style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+					</div>
+					<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+					</div>
+				</div>
+				<input style="position: absolute; text-align: right; margin-top: -2px; right: 32px; width: 44px;">
+				<div
+					style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -2px; right: 20px;">
+					<div class="geBtnUp"
+						style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+					</div>
+					<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+					</div>
+				</div>
+				<br>
+				<div style="position: absolute; right: 84px; width: 61px; margin-top: 6px; text-align: center;">左
+				</div>
+				<div style="position: absolute; right: 20px; width: 61px; margin-top: 6px; text-align: center;">上
+				</div>
+			</div>
+			<div class="geFormatSection" style="padding: 12px 0px 30px 18px; display: none;">
+				<div style="position: absolute; width: 70px; margin-top: 0px; font-weight: bold;">End
+				</div>
+				<input style="position: absolute; text-align: right; margin-top: -2px; right: 96px; width: 44px;">
+				<div
+					style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -2px; right: 84px;">
+					<div class="geBtnUp"
+						style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+					</div>
+					<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+					</div>
+				</div>
+				<input style="position: absolute; text-align: right; margin-top: -2px; right: 32px; width: 44px;">
+				<div
+					style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -2px; right: 20px;">
+					<div class="geBtnUp"
+						style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+					</div>
+					<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+					</div>
+				</div>
+				<br>
+				<div style="position: absolute; right: 84px; width: 61px; margin-top: 6px; text-align: center;">左
+				</div>
+				<div style="position: absolute; right: 20px; width: 61px; margin-top: 6px; text-align: center;">上
+				</div>
+			</div>
+			<div class="geFormatSection" style="padding: 10px 0px 8px 18px;">
+				<div style="position: absolute; width: 70px; margin-top: 0px; font-weight: bold;">角度
+				</div>
+				<input style="position: absolute; text-align: right; margin-top: -2px; right: 32px; width: 44px;">
+				<div
+					style="border-radius: 3px; border: 1px solid rgb(192, 192, 192); position: absolute; margin-top: -2px; right: 20px;">
+					<div class="geBtnUp"
+						style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 8px; width: 10px;">
+					</div>
+					<div class="geBtnDown" style="border: none; position: relative; height: 8px; width: 10px;">
+					</div>
+				</div>
+				<br>
+				<button title="旋轉90° (Ctrl+R)" style="width: 202px; margin-top: 8px;">旋轉90°
+      </button>
+			</div>
+			<div class="geFormatSection" style="padding: 8px 0px 6px 18px;">
+				<button title="Copy Size (Alt+Shift+X)" style="width: 202px; margin-bottom: 2px;">Copy Size
+      </button>
+				<br>
+				<button title="清除航點 (Alt+Shift+C)" style="width: 202px; margin-bottom: 2px;">清除航點
+      </button>
+				<br>
+				<button title="編輯數據 (Ctrl+M)" style="width: 100px; margin-bottom: 2px;">編輯數據
+      </button>
+				<button title="編輯連結" style="width: 100px; margin-left: 2px; margin-bottom: 2px;">編輯連結
+      </button>
+			</div>
+		</div>
+	</div>

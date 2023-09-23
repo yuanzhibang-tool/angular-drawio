@@ -1,0 +1,18 @@
+.item {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 8px;
+  font-size: 13px;
+  border-width: 0px 0px 1px 1px;
+  border-style: solid;
+  display: inline-block;
+  height: 25px;
+  overflow: hidden;
+  width: 33.3%;
+  background-color: rgb(241, 243, 244);
+  cursor: pointer;
+}
+.active {
+  border-width: 0px;
+  background-color: transparent;
+}
